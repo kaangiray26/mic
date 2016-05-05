@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 #!/usr/bin/python
+#Thanks to Russell Borogove
 
 import pyaudio
 import struct
@@ -136,7 +137,7 @@ class TapTester(object):
 			global s1
 			s1=len(kelime)-1	
 			#print s1
-			print "bu birinci sıra"
+			print "First order"
 			kelime.clear()
 			start_time = datetime.now()
 		if len(sira)==2:
@@ -145,7 +146,7 @@ class TapTester(object):
 			global s			
 			s=s1,s2						
 			#print "bu ikinci sıra"			
-			print "Harf bu: ",s
+			print "This is the letter: ",s
 			sira.clear()
 			kelime.clear()
 			start_time = datetime.now()
